@@ -129,13 +129,13 @@ def results():
     
 
     #These are urllib commands
-    #url = service_url + urllib.urlencode({'address':address, 'key':"AIzaSyDeduE1rUI1ogOZp6qGqtEO3EQwsWYzvOA"})
+    #url = service_url + urllib.urlencode({'address':address, 'key':""})
     # uh = urllib.urlopen(url)
     # data = uh.read()
     #js = json.loads(str(data))
 
     #These are requests commands
-        parameters = {'address':address, 'key':"AIzaSyDeduE1rUI1ogOZp6qGqtEO3EQwsWYzvOA"}
+        parameters = {'address':address, 'key':""}
 
         r = requests.get(service_url, params=parameters)
         js = r.json()
